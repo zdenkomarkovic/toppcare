@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(node --version:*)",
+      "Bash(npm:*)",
+      "Bash(grep -v \"^$\")",
+      "Bash(while read:*)",
+      "Bash(do sed:*)",
+      "Bash(node -e \"const v=require\\(''''fs''''\\).readFileSync\\(''''/dev/stdin'''',''''utf8''''\\); const versions=JSON.parse\\(v\\); console.log\\(versions.filter\\(v=>v.startsWith\\(''''9.''''\\)||v.startsWith\\(''''10.''''\\)||v.startsWith\\(''''11.''''\\)\\).slice\\(-10\\).join\\(''''\\\\n''''\\)\\)\")",
+      "Bash(node:*)",
+      "Bash(npx tsc:*)",
+      "Bash(ffmpeg -version)",
+      "Bash(magick -version)",
+      "Bash(convert -version)",
+      "Bash(ffmpeg -i \"Toppcare3.mp4\" -c:v libx264 -crf 28 -preset medium -vf \"scale=-2:min\\(1080\\\\,ih\\)\" -c:a aac -b:a 96k -movflags +faststart -y \"Toppcare3_opt.mp4\")",
+      "Bash(ffmpeg -i \"Video prezentacija  Karseell set-a.mp4\" -c:v libx264 -crf 28 -preset medium -vf \"scale=-2:min\\(1080\\\\,ih\\)\" -c:a aac -b:a 96k -movflags +faststart -y \"Video_prezentacija_opt.mp4\")",
+      "Bash(ffmpeg -i \"2024-03-22 Karseell hair mask shampoo and oil.mp4 20.mp4\" -c:v libx264 -crf 28 -preset medium -vf \"scale=-2:min\\(1080\\\\,ih\\)\" -c:a aac -b:a 96k -movflags +faststart -y \"karseell_maska_opt.mp4\")",
+      "Bash(ffmpeg -i \"video-147b98d0dbe74bf96ea344910cb85ced-V.mp4\" -c:v libx264 -crf 28 -preset medium -vf \"scale=-2:min\\(1080\\\\,ih\\)\" -c:a aac -b:a 96k -movflags +faststart -y \"karseell_rezultati_opt.mp4\")",
+      "Bash(ls:*)",
+      "Bash(mv -f \"IMG_6375_opt.jpg\" \"IMG_6375.jpeg\")",
+      "Bash(mv -f \"IMG_6400_opt.jpg\" \"IMG_6400.jpeg\")",
+      "Bash(mv -f \"1000050401_opt.jpg\" \"1000050401.jpg\")",
+      "Bash(mv -f \"20260306_112011_opt.jpg\" \"20260306_112011.jpg\")",
+      "Bash(mv -f \"1773325047082_opt.jpg\" \"1773325047082.jpg\")",
+      "Bash(sed -i 's|/1773325047082\\\\.png|/1773325047082.jpg|g' \"app/\\(site\\)/o-nama/page.tsx\" \"components/sections/HeroSection.tsx\")",
+      "Bash(sed -i 's|/hero\\\\.png|/hero.jpg|g' \"app/\\(site\\)/o-nama/page.tsx\")",
+      "Bash(sed -i 's|/Toppcare3\\\\.mp4|/Toppcare3.mp4|g' \"components/sections/ONamaVideos.tsx\" \"components/sections/WhyChooseUs.tsx\")",
+      "Bash(sed -i 's|/Video prezentacija  Karseell set-a\\\\.mp4|/Video_prezentacija.mp4|g' \"components/sections/WhyChooseUs.tsx\" \"components/sections/VideoSection.tsx\")",
+      "Bash(sed -i 's|/2024-03-22 Karseell hair mask shampoo and oil\\\\.mp4 20\\\\.mp4|/karseell_maska.mp4|g' \"components/sections/WhyChooseUs.tsx\" \"components/sections/VideoSection.tsx\")",
+      "Bash(cd:*)",
+      "Bash(sed -i 's|/1000050420\\\\.jpg|/1000050420.webp|g' components/sections/AboutSection.tsx)",
+      "Bash(sed -i 's|/Picture 1\\\\.jpg|/Picture 1.webp|g' components/sections/HeroSection.tsx)",
+      "Bash(sed -i 's|/1773325047082\\\\.jpg|/1773325047082.webp|g' components/sections/HeroSection.tsx app/\\\\\\(site\\\\\\)/o-nama/page.tsx)",
+      "Bash(sed -i 's|/Screenshot_20260315_171351_Instagram\\\\.jpg|/Screenshot_20260315_171351_Instagram.webp|g' components/sections/HeroSection.tsx components/sections/TestimonialsSection.tsx)",
+      "Bash(sed -i \"s|url\\(''/hero\\\\.jpg''\\)|url\\(''/hero.webp''\\)|g\" app/\\\\\\(site\\\\\\)/o-nama/page.tsx)"
+    ]
+  }
+}
