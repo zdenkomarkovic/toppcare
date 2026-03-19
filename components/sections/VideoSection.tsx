@@ -52,7 +52,7 @@ export default function VideoSection() {
               />
             </div>
             <p className="mt-4 text-center text-[#4a1e30] font-bold text-base">
-              {videos[active].title}
+              {videos[active]?.title}
             </p>
           </div>
 
