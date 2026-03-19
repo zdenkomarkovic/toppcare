@@ -43,8 +43,8 @@ export default function VideoSection() {
             >
               <video
                 ref={videoRef}
-                key={videos[active].src}
-                src={videos[active].src}
+                key={videos[active]?.src}
+                src={videos[active]?.src}
                 controls
                 autoPlay
                 playsInline
