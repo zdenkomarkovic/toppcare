@@ -253,7 +253,7 @@ export default function ProductPage() {
                 <Link
                   href="/porudzbina"
                   onClick={handleAdd}
-                  className="block w-full text-center border-2 border-[#6b2d45] text-[#6b2d45] hover:bg-[#6b2d45] hover:text-white font-bold py-4 rounded-xl transition-colors"
+                  className="block w-full text-center border-2 border-[#c4788c] text-[#c4788c] hover:bg-[#c4788c] hover:text-white font-bold py-4 rounded-xl transition-colors"
                 >
                   Naruči odmah
                 </Link>
