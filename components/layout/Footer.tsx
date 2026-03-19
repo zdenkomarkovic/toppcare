@@ -31,7 +31,8 @@ export default function Footer() {
               alt="Karseell Srbija – Topp Care"
               width={160}
               height={64}
-              className="h-16 w-auto brightness-0 invert mb-5"
+              style={{ width: "auto", height: "4rem" }}
+              className="brightness-0 invert mb-5"
             />
             <p className="text-sm leading-relaxed mb-6">
               Zvanični uvoznik i distributer originalnih Karseell proizvoda za

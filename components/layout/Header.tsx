@@ -31,7 +31,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/">
-            <Image src="/logo.png" alt="Karseell Srbija – Topp Care" width={120} height={40} className="h-10 w-auto" priority />
+            <Image src="/logo.png" alt="Karseell Srbija – Topp Care" width={120} height={40} style={{ width: "auto", height: "2.5rem" }} priority />
           </Link>
 
           {/* Desktop nav */}
