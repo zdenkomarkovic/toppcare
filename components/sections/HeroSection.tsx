@@ -26,16 +26,18 @@ export default function HeroSection() {
       <div className="absolute inset-0 flex items-stretch overflow-hidden py-2">
         <div className="hero-marquee h-full">
           {[...images, ...images].map((src, i) => (
-            <div key={i} className="relative h-full w-screen md:w-[33.33vw] shrink-0 px-2">
-              <Image
-                src={src}
-                alt=""
-                aria-hidden="true"
-                fill
-                className="object-cover rounded-2xl"
-                sizes="33vw"
-                priority={i < 3}
-              />
+            <div key={i} className="h-full w-screen md:w-[33.33vw] shrink-0 px-0.5 md:px-1 py-0.5">
+              <div className="relative h-full w-full overflow-hidden rounded-2xl">
+                <Image
+                  src={src}
+                  alt=""
+                  aria-hidden="true"
+                  fill
+                  className="object-cover"
+                  sizes="33vw"
+                  priority={i < 3}
+                />
+              </div>
             </div>
           ))}
         </div>

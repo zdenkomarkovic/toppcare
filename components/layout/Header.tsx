@@ -20,7 +20,8 @@ export default function Header() {
     <header className="sticky top-0 z-30 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
       {/* Top bar */}
       <div className="bg-[#c4788c] text-white text-xs lg:text-base text-center py-2 px-4">
-        Plaćanje pouzećem &nbsp;|&nbsp; 100% originalni Karseell proizvodi &nbsp;|&nbsp;{" "}
+        <span className="hidden sm:inline">Plaćanje pouzećem &nbsp;|&nbsp; </span>
+        100% originalni Karseell proizvodi &nbsp;|&nbsp;{" "}
         <a href="tel:0606794006" className="underline underline-offset-2 hover:opacity-80 transition-opacity">
           060/6794-006
         </a>
