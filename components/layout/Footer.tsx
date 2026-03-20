@@ -34,8 +34,10 @@ export default function Footer() {
               className="brightness-0 invert mb-5"
             />
             <p className="text-sm leading-relaxed mb-6">
-              <span className="">TOPP CARE - Ogranak TOPP Consultants International doo </span>{" "}
-              Zvanični uvoznik i distributer originalnih Karseell proizvoda za negu kose u Srbiji.
+              <span className="font-bold">
+                TOPP CARE - Ogranak TOPP Consultants International doo{" "}
+              </span>{" "}
+              - Zvanični uvoznik i distributer originalnih Karseell proizvoda za negu kose u Srbiji.
               Kolagen, keratin, arganovo ulje – za kosu koja sija.
             </p>
           </div>
