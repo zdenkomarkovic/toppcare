@@ -33,7 +33,8 @@
       "Bash(sed -i 's|/Picture 1\\\\.jpg|/Picture 1.webp|g' components/sections/HeroSection.tsx)",
       "Bash(sed -i 's|/1773325047082\\\\.jpg|/1773325047082.webp|g' components/sections/HeroSection.tsx app/\\\\\\(site\\\\\\)/o-nama/page.tsx)",
       "Bash(sed -i 's|/Screenshot_20260315_171351_Instagram\\\\.jpg|/Screenshot_20260315_171351_Instagram.webp|g' components/sections/HeroSection.tsx components/sections/TestimonialsSection.tsx)",
-      "Bash(sed -i \"s|url\\(''/hero\\\\.jpg''\\)|url\\(''/hero.webp''\\)|g\" app/\\\\\\(site\\\\\\)/o-nama/page.tsx)"
+      "Bash(sed -i \"s|url\\(''/hero\\\\.jpg''\\)|url\\(''/hero.webp''\\)|g\" app/\\\\\\(site\\\\\\)/o-nama/page.tsx)",
+      "Bash(find E:/Sajtovi/toppcare -maxdepth 3 -type d ! -path */node_modules* ! -path */.next*)"
     ]
   }
 }

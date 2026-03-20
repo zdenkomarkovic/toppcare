@@ -57,6 +57,22 @@ export async function getProductBySlug(slug: string): Promise<Product | null> {
   }
 }
 
+export async function getAllProductSlugs(): Promise<
+  { slug: string; updatedAt: string }[]
+> {
+  if (!isConfigured) return [];
+  try {
+    return await sanityClient.fetch(`
+      *[_type == "product"] {
+        "slug": slug.current,
+        "updatedAt": _updatedAt
+      }
+    `);
+  } catch {
+    return [];
+  }
+}
+
 export async function getCategories(): Promise<Category[]> {
   if (!isConfigured) return [];
   try {

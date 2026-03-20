@@ -1,6 +1,15 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from "@/lib/constants";
+import {
+  SITE_NAME,
+  SITE_DESCRIPTION,
+  SITE_URL,
+  COMPANY_LEGAL,
+  CONTACT_PHONE,
+  CONTACT_EMAIL,
+  INSTAGRAM_URL,
+} from "@/lib/constants";
+import { JsonLd } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -41,6 +50,24 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": ["Organization", "LocalBusiness"],
+  name: SITE_NAME,
+  legalName: COMPANY_LEGAL,
+  url: SITE_URL,
+  logo: `${SITE_URL}/logo.png`,
+  description: SITE_DESCRIPTION,
+  telephone: CONTACT_PHONE,
+  email: CONTACT_EMAIL,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Beograd",
+    addressCountry: "RS",
+  },
+  sameAs: [INSTAGRAM_URL],
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -48,7 +75,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="sr">
-      <body>{children}</body>
+      <body>
+        <JsonLd data={organizationSchema} />
+        {children}
+      </body>
     </html>
   );
 }
