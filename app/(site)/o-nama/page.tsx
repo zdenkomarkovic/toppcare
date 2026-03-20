@@ -1,7 +1,7 @@
 import { buildMetadata } from "@/lib/metadata";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
-import { INSTAGRAM_URL, INSTAGRAM_HANDLE, CONTACT_EMAIL, CONTACT_PHONE } from "@/lib/constants";
+import { INSTAGRAM_URL } from "@/lib/constants";
 import Link from "next/link";
 import Image from "next/image";
 import ONamaVideos from "@/components/sections/ONamaVideos";
@@ -26,6 +26,8 @@ export default function ONamaPage() {
             backgroundPosition: "center",
           }}
         />
+        {/* Overlay gradijent */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2a0d1a]/70 via-[#4a1e30]/40 to-transparent" />
 
         {/* Tekst gore, slika dole desno – sve unutar Container-a */}
         <Container className="relative z-10 h-full flex flex-col justify-between pt-12">
