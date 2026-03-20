@@ -30,8 +30,7 @@ export default function Footer() {
               alt="Karseell Srbija – Topp Care"
               width={160}
               height={64}
-              style={{ width: "auto", height: "4rem" }}
-              className="brightness-0 invert mb-5"
+              className="brightness-0 invert mb-5 h-16 w-auto"
             />
             <p className="text-sm leading-relaxed mb-6">
               <span className="font-bold">

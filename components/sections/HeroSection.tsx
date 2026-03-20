@@ -35,8 +35,8 @@ export default function HeroSection() {
                   fill
                   className="object-cover"
                   sizes="33vw"
-                  priority={i < 3}
-                  loading={i < 3 ? "eager" : "lazy"}
+                  priority={i < images.length * 2}
+                  loading="eager"
                 />
               </div>
             </div>

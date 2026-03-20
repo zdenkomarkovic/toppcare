@@ -49,7 +49,7 @@ export default function ONamaPage() {
               width={288}
               height={500}
               className="w-56 lg:w-72 rounded-t-2xl shadow-2xl object-cover object-bottom"
-              style={{ maxHeight: "70vh" }}
+              style={{ maxHeight: "70vh", height: "auto" }}
               priority
             />
           </div>
