@@ -71,7 +71,7 @@ export default function ONamaPage() {
                   <strong>
                     TOPP CARE – ogranak kompanije TOPP Consultants International d.o.o.
                   </strong>
-                  , osnovanog s jednim ciljem – doneti autentične, originalne Karseell proizvode
+                  , osnovan je s jednim ciljem – doneti autentične, originalne Karseell proizvode
                   direktno na tržište Srbije i regiona.
                 </p>
                 <p>
