@@ -9,7 +9,7 @@ const row1 = [
   },
   {
     title: "Nauka susreće prirodu",
-    desc: "Kolagen, keratin, mak esencija i arganovo ulje – sastojci koji dubinski obnavljaju i hrane svaki strandm kose.",
+    desc: "Kolagen, keratin, maka esencija i arganovo ulje – sastojci koji dubinski obnavljaju i hrane svaki pramen kose.",
   },
   {
     title: "Stručna podrška",

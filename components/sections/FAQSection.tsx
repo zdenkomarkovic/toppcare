@@ -7,15 +7,15 @@ import SectionHeading from "@/components/ui/SectionHeading";
 const faqs = [
   {
     q: "Kako se koristi Karseell maska za kosu?",
-    a: "Karseell kolagenska maska nanosi se na opranu, blago vlažnu kosu posle šampona. Ostavite je 5–10 minuta da deluje, a zatim isperite toplom vodom. Za best rezultate koristite je jednom nedeljno. Kolagen i keratin prodiru duboko u strukturu vlasi i obnavljaju oštećene delove iznutra.",
+    a: "Karseell kolagenska maska nanosi se nakon pranja na celu kosu, svuda, od korena do krajeva. Ostavite je 10- 15 minuta da deluje, a zatim blago  isperite toplom vodom. Za najbolje rezultate koristite je prilikom svakog pranja. Kolagen i prirodni sastojci prodiru duboko u strukturu vlasi i obnavljaju oštećene delove iznutra.",
   },
   {
     q: "Kako oporaviti sprženu i oštećenu kosu posle blajhanja?",
-    a: "Oporavak kose posle blajhanja zahteva intenzivnu negu bogatom proteinima i vlaženjem. Karseell maska sa kolagenom i keratinom popunjava prazna mesta u korteksu vlasi, smanjuje ispucale krajeve i vraća elastičnost kosi već posle nekoliko primena. Preporučujemo kombinaciju maske i Karseell ulja za kosu.",
+    a: "Oporavak kose posle blajhanja zahteva intenzivnu negu bogatom proteinima i vlaženjem. Karseell maska sa kolagenom i prirodnim sastojcima popunjava prazna mesta u korteksu vlasi, smanjuje ispucale krajeve i vraća elastičnost kosi već posle nekoliko primena. Preporučujemo kombinaciju maske i Karseell ulja za kosu.",
   },
   {
     q: "Da li su Karseell proizvodi originalni?",
-    a: "Da. Topp Care je zvanični uvoznik i distributer originalnih Karseell proizvoda za Srbiju. Svaki paket dolazi sa originalnom ambalažom i hologramom. Ne prodajemo kopije niti sivotržišnu robu.",
+    a: "Da. Topp Care je zvanični uvoznik i distributer originalnih Karseell proizvoda za Srbiju. Svaki paket dolazi sa originalnom ambalažom i zvanicnim QR kodom. Ne prodajemo kopije niti sivotržišnu robu.",
   },
   {
     q: "Gde mogu da kupim Karseell u Srbiji i Beogradu?",
@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "Šta je razlika između Karseell maske i Karseell ulja za kosu?",
-    a: "Karseell maska je tretman koji se ispire – deluje iznutra, obnavlja strukturu vlasi i dubinski hidratizuje kosu. Karseell ulje za kosu je leave-in proizvod koji se nanosi na suvu ili vlažnu kosu bez ispiranja – zatvara perjanicu, daje sjaj i štiti od toplote sušača i ravnača.",
+    a: "Karseell maska je tretman koji se ispira – deluje iznutra, obnavlja strukturu vlasi i dubinski hidrira kosu. Karseell ulje za kosu je serum, koji se nanosi na suvu ili vlažnu kosu bez ispiranja – zatvara kutikulu dlake, daje sjaj i štiti od toplote fena i prese.",
   },
   {
     q: "Da li Karseell keratin sadrži formaldehid?",
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: "Koja je razlika između Karseell seta i pojedinačnih proizvoda?",
-    a: "Karseell set sadrži koordinisane proizvode koji su formulisani da deluju zajedno – šampon priprema kosu, maska tretira i obnavlja, a ulje zatvara i štiti. Korišćenjem seta dobijate sinergijski efekat koji pojedinačni proizvodi ne mogu u potpunosti da postignu.",
+    a: "Karseell set sadrži koordinisane proizvode koji su formulisani da deluju zajedno – šampon priprema kosu, maska tretira i obnavlja, a ulje zatvara i štiti. Korišćenjem seta pojacavate  efekat Karseell dozivljaja.",
   },
 ];
 
@@ -67,18 +67,13 @@ export default function FAQSection() {
 
         <div className="mt-12 max-w-4xl mx-auto space-y-3">
           {faqs.map(({ q, a }, i) => (
-            <div
-              key={i}
-              className="bg-white rounded-2xl border border-gray-100 overflow-hidden"
-            >
+            <div key={i} className="bg-white rounded-2xl border border-gray-100 overflow-hidden">
               <button
                 className="w-full flex items-center justify-between px-6 py-5 text-left gap-4"
                 onClick={() => setOpen(open === i ? null : i)}
                 aria-expanded={open === i}
               >
-                <span className="font-semibold text-gray-900 text-base lg:text-lg">
-                  {q}
-                </span>
+                <span className="font-semibold text-gray-900 text-base lg:text-lg">{q}</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"

@@ -34,7 +34,7 @@ export default function ONamaPage() {
               <span className="text-[#e8a8b8]">Topp Care </span>
               <span className="text-white">Karseell Srbija</span>
             </h1>
-            <p className="mt-4 text-white/80 text-lg leading-relaxed max-w-md mx-auto">
+            <p className="mt-4 text-white font-bold text-lg leading-relaxed max-w-md mx-auto">
               Vaš zvanični partner za profesionalnu negu kose – originalni uvoznik i distributer
               Karseell proizvoda u Srbiji.
             </p>
@@ -66,10 +66,11 @@ export default function ONamaPage() {
               />
               <div className="mt-6 space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Karseell Srbija je ogranak kompanije{" "}
-                  <strong>TOPP Consultants International d.o.o.</strong>, osnovanog s jednim ciljem
-                  – doneti autentične, originalne Karseell proizvode direktno na tržište Srbije i
-                  regiona.
+                  <strong>
+                    TOPP CARE – ogranak kompanije TOPP Consultants International d.o.o.
+                  </strong>
+                  , osnovanog s jednim ciljem – doneti autentične, originalne Karseell proizvode
+                  direktno na tržište Srbije i regiona.
                 </p>
                 <p>
                   Kao tim entuzijasta i profesionalaca koji vole zdravu kosu, svesni smo koliko je
@@ -78,9 +79,9 @@ export default function ONamaPage() {
                   brendova za negu kose na svetu.
                 </p>
                 <p>
-                  Karseell kombinuje <strong>drevnu mudrost prirodnih sastojaka</strong> – poput mak
-                  esencije, arganovog i kokosovog ulja – s najmodernijim dostignućima u nezi kose:
-                  kolagenom i keratinom bez formaldehida.
+                  Karseell kombinuje <strong>drevnu mudrost prirodnih sastojaka</strong> – poput
+                  maka esencije, arganovog i kokosovog ulja – s najmodernijim dostignućima u nezi
+                  kose: kolagenom i keratinom bez formaldehida.
                 </p>
               </div>
             </div>
@@ -122,8 +123,18 @@ export default function ONamaPage() {
                 title: "Za frizere",
                 desc: "Pružamo alatke za savršene rezultate u svakom salonu.",
                 icon: (
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M7.848 8.25l1.536.887M7.848 8.25a3 3 0 1 1-5.196-3 3 3 0 0 1 5.196 3Zm1.536.887a2.165 2.165 0 0 1 1.083 1.839c.005.351.054.695.14 1.024M9.384 9.137l2.077 1.199M7.848 15.75l1.536-.887m-1.536.887a3 3 0 1 1-5.196 3 3 3 0 0 1 5.196-3Zm1.536-.887a2.165 2.165 0 0 0 1.083-1.839l.032-.217m0 0l2.045 1.181m-2.077-1.198 2.077-1.199m0 0 4.978 2.880m0-3.158 1.05-.607a2.173 2.173 0 0 0 0-3.758l-1.05-.607m-4.978 3.516.682-1.179m4.296-2.337L15.75 8.25m0 0a3 3 0 1 1 5.196-3 3 3 0 0 1-5.196 3Z" />
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={1.8}
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M7.848 8.25l1.536.887M7.848 8.25a3 3 0 1 1-5.196-3 3 3 0 0 1 5.196 3Zm1.536.887a2.165 2.165 0 0 1 1.083 1.839c.005.351.054.695.14 1.024M9.384 9.137l2.077 1.199M7.848 15.75l1.536-.887m-1.536.887a3 3 0 1 1-5.196 3 3 3 0 0 1 5.196-3Zm1.536-.887a2.165 2.165 0 0 0 1.083-1.839l.032-.217m0 0l2.045 1.181m-2.077-1.198 2.077-1.199m0 0 4.978 2.880m0-3.158 1.05-.607a2.173 2.173 0 0 0 0-3.758l-1.05-.607m-4.978 3.516.682-1.179m4.296-2.337L15.75 8.25m0 0a3 3 0 1 1 5.196-3 3 3 0 0 1-5.196 3Z"
+                    />
                   </svg>
                 ),
               },
@@ -131,8 +142,18 @@ export default function ONamaPage() {
                 title: "Za pojedince",
                 desc: "Samopouzdanje koje dolazi sa zdravom, sjajnom kosom.",
                 icon: (
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75s.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={1.8}
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75s.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z"
+                    />
                   </svg>
                 ),
               },
@@ -140,8 +161,18 @@ export default function ONamaPage() {
                 title: "Za sve",
                 desc: "Originalni proizvodi dostupni svima u Srbiji i regionu.",
                 icon: (
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253M3.157 7.582A8.959 8.959 0 0 0 3 12c0 .778.099 1.533.284 2.253" />
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={1.8}
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253M3.157 7.582A8.959 8.959 0 0 0 3 12c0 .778.099 1.533.284 2.253"
+                    />
                   </svg>
                 ),
               },
@@ -160,7 +191,6 @@ export default function ONamaPage() {
           </div>
         </Container>
       </section>
-
 
       <ONamaVideos />
 

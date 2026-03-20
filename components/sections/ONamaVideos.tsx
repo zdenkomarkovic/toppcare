@@ -3,11 +3,11 @@
 const videos = [
   {
     src: "/Toppcare3.mp4",
-    title: "Topp Care – Prezentacija",
+    title: 'TOPP CARE KARSEELL SRBIJA u Kini u poseti kod našeg partnera "Chinchy Baytiful Cosmetics", vlasnika i proizvođača KARSEELL proizvoda.',
   },
   {
     src: "/karseell_rezultati.mp4",
-    title: "Karseell – Rezultati",
+    title: "TOPP CARE KARSEELL SRBIJA jedan od sponzora Balkan Beauty Week & Awards, prestiznog dogadjaja Beauty industrije.",
   },
 ];
 
