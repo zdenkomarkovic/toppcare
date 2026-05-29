@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import {
   SITE_NAME,
@@ -76,6 +77,18 @@ export default function RootLayout({
   return (
     <html lang="sr">
       <body>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18187925113"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-18187925113');
+          `}
+        </Script>
         <JsonLd data={organizationSchema} />
         {children}
       </body>
