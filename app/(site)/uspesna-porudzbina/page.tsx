@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { buildMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import Container from "@/components/ui/Container";
@@ -14,7 +15,9 @@ export const metadata = buildMetadata({
 export default function UspesnaPorudzbina() {
   return (
     <div className="min-h-[80vh] flex items-center bg-rose-50/50">
-      <GtagConversion />
+      <Suspense>
+        <GtagConversion />
+      </Suspense>
       <Container>
         <div className="max-w-lg mx-auto text-center py-16">
           <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">

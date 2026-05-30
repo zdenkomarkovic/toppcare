@@ -52,8 +52,9 @@ export default function CheckoutForm() {
 
       if (!res.ok) throw new Error("Greška pri slanju porudžbine.");
 
+      const { orderNumber } = await res.json();
       clearCart();
-      router.push("/uspesna-porudzbina");
+      router.push(`/uspesna-porudzbina?order=${orderNumber}`);
     } catch {
       setError("Došlo je do greške. Molimo pokušajte ponovo ili nas kontaktirajte.");
     } finally {
