@@ -2,6 +2,7 @@ import { buildMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import Container from "@/components/ui/Container";
 import { CONTACT_PHONE } from "@/lib/constants";
+import GtagConversion from "@/components/analytics/GtagConversion";
 
 export const metadata = buildMetadata({
   title: "Porudžbina primljena",
@@ -12,6 +13,7 @@ export const metadata = buildMetadata({
 export default function UspesnaPorudzbina() {
   return (
     <div className="min-h-[80vh] flex items-center bg-rose-50/50">
+      <GtagConversion />
       <Container>
         <div className="max-w-lg mx-auto text-center py-16">
           <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
