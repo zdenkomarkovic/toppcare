@@ -1,6 +1,7 @@
 import { buildMetadata } from "@/lib/metadata";
 import Container from "@/components/ui/Container";
 import KontaktForm from "@/components/sections/KontaktForm";
+import PhoneLink from "@/components/analytics/PhoneLink";
 import {
   CONTACT_PHONE,
   CONTACT_EMAIL,
@@ -99,14 +100,20 @@ export default function KontaktPage() {
                   <div>
                     <p className="text-xs text-gray-400 uppercase tracking-wider mb-0.5">{label}</p>
                     {href ? (
-                      <a
-                        href={href}
-                        target={href.startsWith("http") ? "_blank" : undefined}
-                        rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-                        className="font-semibold text-gray-900 hover:text-[#c4788c] transition-colors"
-                      >
-                        {value}
-                      </a>
+                      href.startsWith("tel:") ? (
+                        <PhoneLink href={href} className="font-semibold text-gray-900 hover:text-[#c4788c] transition-colors">
+                          {value}
+                        </PhoneLink>
+                      ) : (
+                        <a
+                          href={href}
+                          target={href.startsWith("http") ? "_blank" : undefined}
+                          rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+                          className="font-semibold text-gray-900 hover:text-[#c4788c] transition-colors"
+                        >
+                          {value}
+                        </a>
+                      )
                     ) : (
                       <p className="font-semibold text-gray-900">{value}</p>
                     )}

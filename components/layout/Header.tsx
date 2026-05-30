@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { useCart } from "@/components/cart/CartContext";
+import PhoneLink from "@/components/analytics/PhoneLink";
 
 export default function Header() {
   const { count, setIsOpen } = useCart();
@@ -22,9 +23,9 @@ export default function Header() {
       <div className="bg-[#c4788c] text-white text-xs lg:text-base text-center py-2 px-4">
         <span className="hidden sm:inline">Plaćanje pouzećem &nbsp;|&nbsp; </span>
         100% originalni Karseell proizvodi &nbsp;|&nbsp;{" "}
-        <a href="tel:0606794006" className="underline underline-offset-2 hover:opacity-80 transition-opacity">
+        <PhoneLink href="tel:0606794006" className="underline underline-offset-2 hover:opacity-80 transition-opacity">
           060/6794-006
-        </a>
+        </PhoneLink>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

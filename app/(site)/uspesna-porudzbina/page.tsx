@@ -3,6 +3,7 @@ import Link from "next/link";
 import Container from "@/components/ui/Container";
 import { CONTACT_PHONE } from "@/lib/constants";
 import GtagConversion from "@/components/analytics/GtagConversion";
+import PhoneLink from "@/components/analytics/PhoneLink";
 
 export const metadata = buildMetadata({
   title: "Porudžbina primljena",
@@ -52,9 +53,9 @@ export default function UspesnaPorudzbina() {
 
           <p className="text-sm text-gray-500 mb-6">
             Pitanja? Pozovite nas:{" "}
-            <a href={`tel:0606794006`} className="text-[#c4788c] font-semibold">
+            <PhoneLink href="tel:0606794006" className="text-[#c4788c] font-semibold">
               {CONTACT_PHONE}
-            </a>
+            </PhoneLink>
           </p>
 
           <Link

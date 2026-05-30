@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import PhoneLink from "@/components/analytics/PhoneLink";
 import {
   COMPANY_LEGAL,
   COMPANY_MB,
@@ -64,7 +65,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-4 text-sm">
               <li>
-                <a
+                <PhoneLink
                   href={`tel:${CONTACT_PHONE.replace(/[^0-9+]/g, "")}`}
                   className="flex items-center gap-3 hover:text-white transition-colors"
                 >
@@ -82,7 +83,7 @@ export default function Footer() {
                     />
                   </svg>
                   {CONTACT_PHONE}
-                </a>
+                </PhoneLink>
               </li>
               <li>
                 <a
